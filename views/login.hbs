@@ -1,0 +1,27 @@
+<link href = "login.css" rel= "stylesheet" type = "text/css">
+
+<title>LOGIN</title>
+
+<div class="center">
+    <div class="login_logo">
+        <span style="color:#FFF">LOGIN</span>
+    </div>
+    <div class="center" >
+    <form action="" method="POST" name="login">
+    {{#if loginError}}
+        <p class="login_error_msg">Cannot Login, Try Again</p>
+    {{/if}}
+    <input type="hidden" name="_csrf" value="{{csrfToken}}">
+    <div class="form-group has-success">
+        <label class="form-label" for="input-example-1">Username:</label>
+        <input class="form-input" type="text" name="username" placeholder="Username">
+    </div>
+    <div class="form-group">
+        <label class="form-label" for="input-example-1">Password:</label>
+        <input class="form-input" type="password" name="password" placeholder="Password">
+    </div>      
+        <button class="btn" type="submit" value="login">Login</button>
+    </form>
+</div>
+
+

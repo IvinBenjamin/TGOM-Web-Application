@@ -1,0 +1,240 @@
+:root{
+    font-size: 16px;
+}
+body{
+    background-color:#061224; 
+    color: #fff;
+}
+#nav{
+    flex-direction: row;
+    justify-content: space-between; 
+    position: relative;
+    width: 100%;
+    margin-top: -5px;
+    margin-right: -20px;
+}
+a{
+    text-decoration: none;
+    list-style: none;
+    font-size: 45px;
+    font-family: 'Electrolize', sans-serif;
+    color: #fff;
+    font-weight: 800;
+
+}
+
+#menu{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto 1fr;
+    background-color: rgb(10, 10, 12);
+    margin-left: -10px;
+    margin-right: -7px;
+    height: 120px;
+}
+
+.mainlogo{
+    width: 300px;
+}
+#icons{
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+    padding: 0px;
+}
+#icons li{
+    display: inline-block;
+    line-height: 30px;
+    margin: 20px;
+}
+.loimg{
+    display: flex;
+    flex-direction: row;
+    width: 90px;
+    margin-left: 100%;
+    margin-top: -10%;
+}
+.logout-button{
+    margin-top: 5%;
+    height: 50%;
+    margin-left: 45%;
+    font-family: 'Electrolize', sans-serif;
+    font-size: xx-large;
+    border-style: none;
+    font-weight: 900;
+}
+.logout-button:hover{
+    background-color: rgb(216, 13, 13);
+    font-family: 'Electrolize', sans-serif;
+}
+#staff_table{
+    margin-top: 5%;
+    height: 50%;
+    font-family: 'Electrolize', sans-serif;
+    font-size: xx-large;
+    text-decoration: none;
+    list-style: none;
+}
+.staff_header{
+    color: red;
+}
+.staff_top{
+    margin-left: 2%;
+    font-family: 'Electrolize', sans-serif;
+    font-size: xx-large;
+    color: red;
+    font-weight: 900;
+    font-size: 45px;
+}
+.displayed_list{
+    margin-left: 2%;
+    text-decoration: none;
+    list-style: none;
+    
+}
+.admin_top{
+    margin-left: 2%;
+    font-family: 'Electrolize', sans-serif;
+    font-size: xx-large;
+    color: red;
+    font-weight: 900;
+    font-size: 45px;
+}
+.id_name{
+    text-decoration: none;
+    list-style: none;
+    text-transform: capitalize;
+    font-size: 25px;
+}
+.id_name:hover{
+    background-color: rgb(255, 0, 0);
+}
+#comment_table{
+    margin-top: 5%;
+    height: 50%;
+    font-family: 'Electrolize', sans-serif;
+    font-size: xx-large;
+    text-decoration: none;
+    list-style: none;
+}
+.comment_header{
+    color: red;
+}
+.update_btn{
+    width: 5%;
+    color: red;
+}
+.delete_btn{
+    margin-top: 2%;
+    width: 20%;
+    background-color: red;
+    color: #fff;
+}
+.comment_area{
+    margin-top: 2%;
+    max-width: 80%;
+    background-color: #000000;
+    border: 1px solid rgb(255, 0, 0);
+}
+.game_bubble{
+    margin-top: 2%;
+    max-width: 40%;
+    background-color: #000000;
+    border: 1px solid rgb(255, 0, 0);
+}
+.comment_bubble{
+    margin-top: 2%;
+    max-width: 40%;
+    background-color: #000000;
+    border: 1px solid rgb(255, 0, 0);
+}
+.form_error{
+    margin-top: 20%;
+    color: red;
+    font-family: 'Electrolize', sans-serif;
+    font-size: 40px;
+    margin-left: 2%;
+    font-weight: 900;
+}
+.title{
+    margin-top: 2%;
+    max-width: 50%;
+    max-height: 30%;
+    border: 1px solid rgb(255, 0, 0);
+    background-color: #000000;
+}
+.creat{
+    text-decoration: none;
+    list-style: none;
+    font-size: 45px;
+    font-family: 'Electrolize', sans-serif;
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+    margin-left: 2%;
+    margin-top: 5%;
+}
+.creat_staff{
+    text-decoration: none;
+    list-style: none;
+    font-size: 45px;
+    font-family: 'Electrolize', sans-serif;
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+    margin-left: 2%;
+
+}
+.update{
+    text-decoration: none;
+    list-style: none;
+    font-size: 45px;
+    font-family: 'Electrolize', sans-serif;
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+}
+.no-content{
+    font-size: 30px;    
+    font-family: 'Electrolize', sans-serif;
+    font-weight: 800;
+    margin-left: 2%;
+    color: rgb(255, 255, 255);
+}
+#submit_update{
+    margin-top: 1%;
+    width: 5%;
+}
+.submit_update_btn{
+    width: 100%;
+    text-align: center;
+    background-color: red;
+    color: #ffffff;
+
+}
+.staff_capital{
+    text-transform: capitalize;
+}
+.input_error_msg{
+    text-decoration: none;
+    list-style: none;
+    color: red;
+    font-size: 20px;
+}
+#update_textarea{
+    margin-top: 2%;
+}
+#user_section{
+    text-transform: uppercase;
+    font-family: 'Electrolize', sans-serif;
+}
+#game_name{
+    margin-top: 1%;
+}
+#position{
+    margin-top: 1%;
+}
+#years{
+    margin-top: 1%;
+}

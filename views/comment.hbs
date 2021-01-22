@@ -1,0 +1,26 @@
+<title>COMMENT</title>
+<div id="comment_table">
+<h1 class="comment_header">COMMENT</h1>
+{{> errors errors}}
+	{{#if dbErrorOccurred}}
+		<p class="admin_top">Can't display the page now, try again later.</p>
+	{{/if}}
+	{{#if updated}}
+		<p>UPDATED</p>
+	{{/if}}
+	{{#if comment}}
+		<p>TITLE:</p>
+		<p class="title">{{comment.title}}</p>
+		<p>COMMENT:</p>
+		<p class="comment_area">{{comment.comment}}</p>
+</div>	
+	{{#if isLoggedIn}}
+		<a href="/comments/update/{{comment.id}}" value="update" class="update_btn">UPDATE</a>
+		<form action="/comments/delete/{{comment.id}}" method="POST">
+			<input type="hidden" name="_csrf" value="{{csrfToken}}">
+			<input type="submit" class="delete_btn" value="DELETE" onclick="return confirm('Are You Sure You Want To Delete This Comment?');">
+		</form>
+	{{/if}}
+{{else}}
+	<p>No Comment with that ID exists</p>
+{{/if}}

@@ -1,0 +1,28 @@
+<title>REVIEW</title>
+<div id="comment_table">
+<h1 class="comment_header">REVIEW</h1>
+{{> errors errors}}
+	{{#if dbErrorOccurred}}
+		<p class="admin_top">Can't display the page now, try again later.</p>
+	{{/if}}
+	{{#if updated}}
+		<p>UPDATED</p>
+	{{/if}}
+	{{#if review}}
+		<p>TITLE:</p>
+		<p class="title">{{review.title}}</p>
+        <p>GAME:</p>
+		<p class="game_bubble">{{review.game}}</p>
+		<p>COMMENT:</p>
+		<p class="comment_bubble">{{review.comment}}</p>
+</div>	
+	{{#if isLoggedIn}}
+		<a href="/reviews/update/{{review.id}}" class="update_btn">UPDATE</a>
+		<form action="/reviews/delete/{{review.id}}" method="POST">
+		<input type="hidden" name="_csrf" value="{{csrfToken}}">
+		<input type="submit" class="delete_btn" value="DELETE" onclick="return confirm('Are You Sure You Want To Delete This Review?');" >
+		</form>
+	{{/if}}
+{{else}}
+	<p>No Review with that ID exists</p>
+{{/if}}

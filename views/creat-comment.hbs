@@ -1,0 +1,27 @@
+
+<link href = "staffs.css" rel= "stylesheet" type = "text/css" >
+
+
+
+<title>CREATE A COMMENT</title>
+
+<div id="user_section">
+	<h1>CREATE A COMMENT</h1>
+	{{> errors errors}}
+		{{#if dbErrorOccurred}}
+		<p class="admin_top">Can't display the page now, try again later.</p>
+		{{/if}}
+		<form action="" method="POST">
+			<input type="hidden" name="_csrf" value="{{csrfToken}}">
+			<div>
+				Title: <input type="name" name="title" value="{{title}}">
+			</div>
+			<div id="update_textarea">
+				Comment: 
+			</div>
+				<textarea class="update_textarea" type="text" name="comment" rows="4" cols="60" >{{comment.comment}} </textarea>
+			<div id="submit_update">
+				<input class="submit_update_btn" type="submit" name="create-btn" value="CREATE">
+			</div>
+		</form>
+</div>

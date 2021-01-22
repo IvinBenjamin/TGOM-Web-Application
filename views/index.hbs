@@ -1,0 +1,41 @@
+<link href = "index.css" rel= "stylesheet" type = "text/css" >
+
+
+<title>TGOM</title>
+{{#if csurfError}}
+		<span> An Error With The Forms Was Encountered</span>
+{{/if}}
+
+<div id="textrow">
+	<div id="firstText">
+		{{#if isLoggedIn}}
+			<span>WELCOME BOSS</span>
+		{{/if}}
+		<p>KNOW YOUR GAME</p>
+	</div>
+	<div id="textcoloum">	
+		<h>All About The Newest Games </h>
+		<p>Everything You Want To Know About Your Favorite And All The Newest Games In One Place</p>
+	</div>		
+</div>
+<div id="games">
+	<div id="flight">
+		<p>Flight Simulator 2020</p>
+		<a href="/flight"><img src="flight.jpg" class="flight"></a>
+	</div>	
+	<div id="sim">
+		<p>Microsoft Flight Simulator (known as Microsoft Flight Simulator 2020) is a flight simulator developed by Asobo Studio <a href="/flight">Read More</a></p>
+	</div>
+	<div id="controller">
+		<img src="controller.png" class="controller">
+	</div>	
+	<div id="marvel">
+		<div id="hero">
+			<p>Marvels Avengers</p>
+			<a href="/marvel"><img src="marvel.jpg" class="marvel"></a>
+		</div>
+		<div id="marvelWiki">	
+			<p>Marvel's Avengers is an upcoming action-adventure video game developed by Crystal Dynamics and published by Square Enix <a href="/marvel">Read More</a></p>
+		</div>
+	</div>
+</div>

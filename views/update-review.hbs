@@ -1,0 +1,32 @@
+
+<link href = "staffs.css" rel= "stylesheet" type = "text/css" >
+
+
+
+<title>UPDATE A REVIEW</title>
+	{{#if ReviewDeleted}}
+		<p class="admin_top">Unfortunately The Review Has Been Deleted</p>
+	{{/if}}
+	{{#if dbErrorOccurred}}
+		<p class="admin_top">Can't display the page now, try again later.</p>
+	{{/if}}
+<div id="user_section">
+	<h1>Update Reviews</h1>
+	{{> errors errors}}
+		<form action="" method="POST">
+			<input type="hidden" name="_csrf" value="{{csrfToken}}">
+			<div>
+				Title: <input type="name" name="title" value="{{review.title}}">
+			</div>
+            <div>
+				Game: <input type="name" name="game" value="{{review.game}}">
+			</div>
+			<div id="update_textarea"></div>
+				Comment: 
+			</div>	
+				<textarea type="text" name="comment" rows="4" cols="60" >{{review.comment}} </textarea>
+			<div id="submit_update">
+			<input class="submit_update_btn" type="submit" value="UPDATE">
+			</div>
+		</form>
+</div>

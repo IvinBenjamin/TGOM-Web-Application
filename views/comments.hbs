@@ -1,0 +1,19 @@
+<link href = "staffs.css" rel= "stylesheet" type = "text/css" >
+
+<title>Comments</title>
+	{{#if dbErrorOccurred}}
+		<p class="admin_top">Can't display the page now, try again later.</p>
+	{{else}}
+		<p class="creat"><a href="/comments/create">POST A COMMENT</a></p>
+		<p class="staff_top">COMMENTS:</p>
+		{{#if comments.length}}
+			<div class="displayed_list">
+				{{#each comments}}
+					<p><a href="/comments/{{id}}" class="id_name">{{title}}</a></p>
+				{{/each}}
+			</div>
+		{{else}}
+			<p class="no-content">Theres no Comments</p>
+		{{/if}}
+		
+	{{/if}}

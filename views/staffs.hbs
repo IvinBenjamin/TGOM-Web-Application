@@ -1,0 +1,22 @@
+<link href = "staffs.css" rel= "stylesheet" type = "text/css" >
+
+<title>STAFFS</title>
+{{#if dbErrorOccurred}}
+	<p class="admin_top">Can't display the page now, try again later.</p>
+{{else}}
+	{{#if isLoggedIn}}
+		<p class="admin_top">ADMIN OPTION</p>
+		<p class="creat_staff"><a href="/staffs/create">CREAT STAFF</a></p>
+	{{/if}}		
+		<p class="staff_top">STAFFS:</p>	
+	{{#if staffs.length}}
+		<div class="displayed_list">
+			{{#each staffs}}
+				<p><a href="/staffs/{{id}}" class="id_name">{{name}}</a></p>
+			{{/each}}
+		</div>
+	{{else}}
+		<p class="no-content">Theres no Staffs</p>
+	{{/if}}
+	
+{{/if}}

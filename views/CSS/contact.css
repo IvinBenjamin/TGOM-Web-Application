@@ -1,0 +1,33 @@
+#contact_us{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-left: 2%;
+}
+#contact_top_text{
+    color: rgb(255, 0, 0);
+    font-family: 'Electrolize', sans-serif;
+    margin-left: 0%;
+    font-weight: 900;
+}
+#contact_top_text p{
+    font-weight: 900;
+    font-size: 40px;
+    font-weight: bolder;
+    margin-top: 15%;
+}
+#contact_information{
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+    font-family: 'Electrolize', sans-serif;
+    font-size: 25px;
+    padding-left: -2%;
+    font-weight: 600;
+}
+#contact_information p{
+    max-width: 90%;
+    opacity: 50%;
+}
+
+    

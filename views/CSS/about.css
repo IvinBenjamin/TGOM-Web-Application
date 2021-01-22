@@ -1,0 +1,25 @@
+#about{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 15%;
+}
+#about p{
+    font-family: 'Electrolize', sans-serif;
+    font-weight: 900;
+    font-size: 25px;
+    font-weight: bolder;
+    margin-left: 2%;
+    margin-top: 3%;
+    max-width: 75%;
+}
+#about span{
+    color: red;
+    font-family: 'Electrolize', sans-serif;
+    font-weight: 900;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-left: 2%;
+}

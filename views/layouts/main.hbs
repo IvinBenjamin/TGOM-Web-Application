@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet">
+        <link href = "/navbar.css" rel= "stylesheet" type = "text/css" >
+		<link href = "login.css" rel= "stylesheet" type = "text/css" >
+     
+</head>
+<body>
+<div id="nav">
+	<div id="menu">
+			<a href="/"><img src="/TGOM.png" class="mainlogo"></a>
+		<div id="icons">
+			<li><a class="home" href="/">HOME</a></li>
+			<li><a class="about" href="/about">ABOUT</a></li>
+			<li><a class="contact" href="/contact">CONTACT</a></li>
+			<li><a class="admin" href="/reviews" >REVIEWS</a></li>
+			<li><a class="admin" href="/comments" >FEEDBACK</a></li>
+			<li><a class="admin" href="/staffs" >STAFFS</a></li>
+		{{#if isLoggedIn}}
+			<form action="/logout"  method="POST"> 
+				<button class="logout-button" type="submit" name="logout" id="logout">LOGOUT</button>
+			</form>
+		{{/if}}	
+			{{#unless isLoggedIn}}
+				<a href="/login"><img src="/profile.png" class="loimg"></a>
+			{{/unless}}
+		
+	</div>
+</div>
+{{{body}}} 
+</body>
+</html>

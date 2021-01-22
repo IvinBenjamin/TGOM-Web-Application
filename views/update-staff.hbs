@@ -1,0 +1,31 @@
+
+<link href = "staffs.css" rel= "stylesheet" type = "text/css" >
+
+
+
+<title>UPDATE A STAFF</title>
+	{{#if StaffDeleted}}
+			<p class="admin_top">Unfortunately The Staff Has Been Deleted</p>
+	{{/if}}
+	{{#if dbErrorOccurred}}
+			<p class="admin_top">Can't display the page now, try again later.</p>
+	{{/if}}
+<div id="user_section">
+	<h1>Update Staffs</h1>
+	{{> errors errors}}
+		<form action="" method="POST">
+			<input type="hidden" name="_csrf" value="{{csrfToken}}">
+			<div>
+				Name: <input type="text" name="name" value="{{staff.name}}">
+			</div>
+			<div id="position">
+				Position: <input type="name" name="position" value="{{staff.position}}">
+			</div>
+			<div id="years">
+				Experience Years: <input type="number" name="yearOfExperince" value="{{staff.yearOfExperince}}">
+			</div>
+			<div id="submit_update">
+			<input class="submit_update_btn" type="submit" value="UPDATE">
+			</div>
+		</form>
+</div>

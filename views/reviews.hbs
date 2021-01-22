@@ -1,0 +1,19 @@
+<link href = "staffs.css" rel= "stylesheet" type = "text/css" >
+
+<title>Reviews</title>
+	{{#if dbErrorOccurred}}
+		<p class="admin_top">Can't display the page now, try again later.</p>
+	{{else}}
+		<p class="creat"><a href="/reviews/create">POST A REVIEW</a></p>
+		<p class="staff_top">REVIEWS:</p>
+		{{#if reviews.length}}
+			<div class="displayed_list">
+				{{#each reviews}}
+					<p><a href="/reviews/{{id}}" class="id_name">{{title}} | {{game}} |</a></p>
+				{{/each}}
+			</div>
+		{{else}}
+			<p class="no-content">Theres no Reviews</p>
+		{{/if}}
+		
+	{{/if}}

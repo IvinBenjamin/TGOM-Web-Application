@@ -1,0 +1,125 @@
+a{
+    text-decoration: none;
+    font-size: 45px;
+   font-family: 'Electrolize', sans-serif;
+    color: #fff;
+    font-weight: 800;
+
+}
+h1{
+   font-family: 'Electrolize', sans-serif;
+    font-size: 75px;
+}
+#textrow{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 0%;
+    padding-top: 140px;
+}
+#firstText{
+    color: rgb(255, 0, 0);
+    font-family: 'Electrolize', sans-serif;
+    font-size: 30px;
+    font-weight: 700; 
+}
+#firstText p{
+    font-weight: 900;
+    font-size: 140%;
+    font-weight: bold;
+    margin-left: 2%;
+    margin-top: 10%;
+}
+#firstText span{
+    color: #fff;
+    font-weight: 900;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 70%;
+}
+#textcoloum{
+    color: #fff;
+    font-family: 'Electrolize', sans-serif;
+    font-size: 30px;
+    margin-left: 2%;
+    font-weight: 500;
+}
+#textcoloum p{
+    margin-top: 50px;
+    max-width: 100%;
+    color: rgb(112, 112, 112);
+    font-size: 30px;
+    font-weight: bolder;
+    
+}
+#games{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
+}
+#flight{
+    padding-top: 12%;
+    color: rgb(255, 0, 0);
+    font-family: 'Electrolize', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    margin-left: 2%;
+}
+#flight p{
+    color: #fff;
+}
+.controller{
+    margin-left: 45%;
+    width: 25%;
+    
+}
+#games img{
+    width: 50%;
+}
+#sim{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+#sim{
+    color: #fff;
+    font-family: 'Electrolize', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    margin-left: 2%;
+    max-width: 50%;
+}
+#sim a{
+    font-size: 100%;
+    color: rgb(255, 0, 0);
+    
+}
+#marvel{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: -18%;
+    margin-left: 2%;
+}
+#hero p{
+    margin-top: 7%;
+    color: #fff;
+    font-family: 'Electrolize', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+}
+#marvelWiki{
+
+    color: #fff;
+    font-family: 'Electrolize', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    max-width: 50%;
+}
+#marvelWiki a{
+    font-size: 100%;
+    color: rgb(255, 0, 0);
+}
